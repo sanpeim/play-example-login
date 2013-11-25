@@ -18,6 +18,7 @@ public class UserInfo extends Model{
   private String name;
   private String email;
   private String password;
+  private boolean admin = false;
   
   /**
    * Creates a new UserInfo instance.
@@ -74,6 +75,20 @@ public class UserInfo extends Model{
    */
   public void setPassword(String password) {
     this.password = password;
+  }
+  
+  /**
+   * @return the admin
+   */
+  public boolean isAdmin() {
+    return admin;
+  }
+
+  /**
+   * @param admin the admin to set
+   */
+  public void setAdmin(boolean admin) {
+    this.admin = admin;
   }
 
 }
